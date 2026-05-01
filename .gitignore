@@ -1,0 +1,50 @@
+# 下载的漫画文件夹（通用规则）
+chapter_*/
+cover.jpg
+# 忽略所有包含漫画标题拼音的文件夹（拼音通常不含空格和特殊字符）
+*[a-z]*[a-z]*/
+# 但保留源代码文件
+!*.py
+!*.md
+!*.txt
+!*.json
+
+# 进度文件和失败日志
+baozimh_crawler_jindu.json
+baozimh_crawler_failed.log
+
+# WebDriver 文件
+geckodriver.exe
+geckodriver.zip
+chromedriver.exe
+chromedriver.zip
+
+# 测试文件
+test_chromium.py
+test_firefox.py
+check_missing.py
+
+# Python 虚拟环境
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE 配置
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 日志文件
+*.log
+
+# OS 文件
+.DS_Store
+Thumbs.db
+
+# 其他临时文件
+*.tmp
+*.bak
